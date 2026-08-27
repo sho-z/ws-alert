@@ -1,0 +1,42 @@
+name: ws-alert check
+
+on:
+  schedule:
+    # UTC 0-14時, 22-23時 = JST 7:00-23:59
+    - cron: '*/5 0-14,22-23 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ws-alert-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - run: node scripts/main.js
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+
+      - name: state.jsonの変更をコミット
+        run: |
+          git config user.name "ws-alert-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || git commit -m "update state.json"
+          git push

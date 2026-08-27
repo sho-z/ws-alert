@@ -1,0 +1,18 @@
+{
+  "name": "ws-alert",
+  "version": "1.0.0",
+  "description": "ヴァイスシュバルツ予約リアルタイム通知システム",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/main.js",
+    "check-pages": "node scripts/check-pages.js",
+    "check-x": "node scripts/check-x.js",
+    "check-news": "node scripts/check-news.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.0",
+    "twitter-api-v2": "^1.17.0"
+  }
+}
