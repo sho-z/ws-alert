@@ -5,5 +5,25 @@
     "yellowsubmarine-ws-category": [],
     "hbst-store-ws-category": [],
     "surugaya-yahoo-tcg": []
+  },
+  "pages": {
+    "nikke2-ws-tcg": {
+      "status": "unknown",
+      "checkedAt": "2026-08-27T14:48:31.737Z"
+    },
+    "nikke2-amiami": {
+      "status": "closed",
+      "checkedAt": "2026-08-27T14:48:33.333Z"
+    }
+  },
+  "x": {
+    "wstcg": {
+      "userId": "1251267721",
+      "lastTweetId": "2092804292306420112"
+    },
+    "13witch_trials": {
+      "userId": "1761599169066893312",
+      "lastTweetId": "2092985556179509641"
+    }
   }
 }
