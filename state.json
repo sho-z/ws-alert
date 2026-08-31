@@ -9,11 +9,11 @@
   "pages": {
     "nikke2-ws-tcg": {
       "status": "unknown",
-      "checkedAt": "2026-08-31T09:28:30.514Z"
+      "checkedAt": "2026-08-31T09:42:51.448Z"
     },
     "nikke2-amiami": {
       "status": "closed",
-      "checkedAt": "2026-08-31T09:28:31.975Z"
+      "checkedAt": "2026-08-31T09:42:52.071Z"
     }
   },
   "x": {
@@ -23,7 +23,7 @@
     },
     "13witch_trials": {
       "userId": "1761599169066893312",
-      "lastTweetId": "2094033465977303525"
+      "lastTweetId": "2094356888314171565"
     }
   }
 }
