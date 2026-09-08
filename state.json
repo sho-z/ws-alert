@@ -3,23 +3,25 @@
     "wstcg-information": [],
     "wstcg-products": [],
     "yellowsubmarine-ws-category": [],
-    "hbst-store-ws-category": [],
+    "hbst-store-ws-category": [
+      "https://store.shopping.yahoo.co.jp/hbst-store/4573616016506.html"
+    ],
     "surugaya-yahoo-tcg": []
   },
   "pages": {
     "nikke2-ws-tcg": {
       "status": "unknown",
-      "checkedAt": "2026-09-08T01:28:54.134Z"
+      "checkedAt": "2026-09-08T06:16:57.545Z"
     },
     "nikke2-amiami": {
       "status": "closed",
-      "checkedAt": "2026-09-08T01:28:55.485Z"
+      "checkedAt": "2026-09-08T06:16:59.074Z"
     }
   },
   "x": {
     "wstcg": {
       "userId": "1251267721",
-      "lastTweetId": "2096901297559474566"
+      "lastTweetId": "2097152945884422573"
     },
     "13witch_trials": {
       "userId": "1761599169066893312",
