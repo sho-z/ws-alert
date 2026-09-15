@@ -53,12 +53,18 @@ async function checkAccount(account, state) {
 
 export async function runCheckX() {
   const state = loadState();
+  state.errors = state.errors ?? {};
   for (const account of config.xAccounts) {
+    const errorKey = `x:${account.id}`;
     try {
       await checkAccount(account, state);
+      if (state.errors[errorKey]) delete state.errors[errorKey];
     } catch (e) {
       console.error(`[x] ${account.id} 取得失敗:`, e.message);
-      await notifyError(`X監視(${account.label})`, e.message);
+      if (!state.errors[errorKey]) {
+        state.errors[errorKey] = true;
+        await notifyError(`X監視(${account.label})`, e.message);
+      }
     }
   }
   saveState(state);

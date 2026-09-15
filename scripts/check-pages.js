@@ -10,8 +10,9 @@ const config = JSON.parse(readFileSync(CONFIG_PATH, 'utf-8'));
 const UA = 'ws-alert/1.0 (personal reservation monitor; contact: local use only)';
 
 function determineStatus(pageText, openKeywords, closedKeywords) {
-  if (openKeywords.some((kw) => pageText.includes(kw))) return 'open';
   if (closedKeywords.some((kw) => pageText.includes(kw))) return 'closed';
+  if (openKeywords.length === 0) return 'open';
+  if (openKeywords.some((kw) => pageText.includes(kw))) return 'open';
   return 'unknown';
 }
 
@@ -45,12 +46,18 @@ async function checkTarget(target, state) {
 
 export async function runCheckPages() {
   const state = loadState();
+  state.errors = state.errors ?? {};
   for (const target of config.directPages) {
+    const errorKey = `pages:${target.id}`;
     try {
       await checkTarget(target, state);
+      if (state.errors[errorKey]) delete state.errors[errorKey];
     } catch (e) {
       console.error(`[pages] ${target.id} 取得失敗:`, e.message);
-      await notifyError(`ページ監視(${target.label})`, e.message);
+      if (!state.errors[errorKey]) {
+        state.errors[errorKey] = true;
+        await notifyError(`ページ監視(${target.label})`, e.message);
+      }
     }
   }
   saveState(state);

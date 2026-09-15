@@ -50,12 +50,18 @@ async function checkTarget(target, state) {
 
 export async function runCheckNews() {
   const state = loadState();
+  state.errors = state.errors ?? {};
   for (const target of config.newsWatch) {
+    const errorKey = `news:${target.id}`;
     try {
       await checkTarget(target, state);
+      if (state.errors[errorKey]) delete state.errors[errorKey];
     } catch (e) {
       console.error(`[news] ${target.id} 取得失敗:`, e.message);
-      await notifyError(`お知らせ監視(${target.label})`, e.message);
+      if (!state.errors[errorKey]) {
+        state.errors[errorKey] = true;
+        await notifyError(`お知らせ監視(${target.label})`, e.message);
+      }
     }
   }
   saveState(state);

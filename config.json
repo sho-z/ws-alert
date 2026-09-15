@@ -1,18 +1,11 @@
 {
   "directPages": [
     {
-      "id": "nikke2-ws-tcg",
-      "label": "勝利の女神：NIKKE Vol.2（ws-tcg公式）",
-      "url": "https://ws-tcg.com/products/nik_bp2/",
-      "openKeywords": ["予約受付中", "予約受付開始"],
-      "closedKeywords": ["予約停止中", "販売終了"]
-    },
-    {
-      "id": "nikke2-amiami",
-      "label": "勝利の女神：NIKKE Vol.2（あみあみ）",
-      "url": "https://www.amiami.jp/top/detail/detail?gcode=CARD-00033576",
-      "openKeywords": ["予約受付中"],
-      "closedKeywords": ["予約停止中", "販売終了", "売切"]
+      "id": "witch-trial-trialdeck-hbst",
+      "label": "魔法少女ノ魔女裁判 トライアルデッキ（ホビーステーション）",
+      "url": "https://store.shopping.yahoo.co.jp/hbst-store/4573616016506.html",
+      "openKeywords": [],
+      "closedKeywords": ["在庫なし", "販売終了", "取扱終了"]
     }
   ],
   "newsWatch": [
@@ -32,19 +25,19 @@
       "id": "yellowsubmarine-ws-category",
       "label": "イエローサブマリン ヴァイスシュヴァルツ一覧",
       "url": "https://shop.yellowsubmarine.co.jp/products/list?category_id=107",
-      "titleKeywords": ["NIKKE Vol.2", "NIKKE VOL.2", "魔女裁判"]
+      "titleKeywords": ["魔女裁判"]
     },
     {
       "id": "hbst-store-ws-category",
       "label": "ホビーステーション ヴァイスシュヴァルツ一覧",
       "url": "https://store.shopping.yahoo.co.jp/hbst-store/a5f4a5a1a5.html",
-      "titleKeywords": ["NIKKE Vol.2", "NIKKE VOL.2", "魔女裁判"]
+      "titleKeywords": ["魔女裁判"]
     },
     {
       "id": "surugaya-yahoo-tcg",
       "label": "駿河屋Yahoo!店 トレーディングカードゲーム一覧",
       "url": "https://store.shopping.yahoo.co.jp/suruga-ya/a5c8a5eca1.html",
-      "titleKeywords": ["NIKKE Vol.2", "NIKKE VOL.2", "魔女裁判"]
+      "titleKeywords": ["魔女裁判"]
     }
   ],
   "xAccounts": [

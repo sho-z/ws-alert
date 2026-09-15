@@ -16,6 +16,10 @@
     "nikke2-amiami": {
       "status": "closed",
       "checkedAt": "2026-09-14T18:58:26.421Z"
+    },
+    "witch-trial-trialdeck-hbst": {
+      "status": "closed",
+      "checkedAt": "2026-09-15T07:13:50.900Z"
     }
   },
   "x": {
@@ -27,5 +31,6 @@
       "userId": "1761599169066893312",
       "lastTweetId": "2099664620407672912"
     }
-  }
+  },
+  "errors": {}
 }
