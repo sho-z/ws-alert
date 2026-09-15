@@ -20,7 +20,7 @@
     },
     "witch-trial-trialdeck-hbst": {
       "status": "closed",
-      "checkedAt": "2026-09-15T14:22:55.976Z"
+      "checkedAt": "2026-09-15T14:32:53.929Z"
     }
   },
   "x": {
@@ -33,7 +33,5 @@
       "lastTweetId": "2099813651234631919"
     }
   },
-  "errors": {
-    "news:amiami-yahoo-tcg": true
-  }
+  "errors": {}
 }
