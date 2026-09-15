@@ -38,6 +38,12 @@
       "label": "駿河屋Yahoo!店 トレーディングカードゲーム一覧",
       "url": "https://store.shopping.yahoo.co.jp/suruga-ya/a5c8a5eca1.html",
       "titleKeywords": ["魔女裁判"]
+    },
+    {
+      "id": "amiami-yahoo-tcg",
+      "label": "あみあみYahoo!店 トレーディングカード一覧",
+      "url": "https://store.shopping.yahoo.co.jp/amiami/a5c8a5eca1.html",
+      "titleKeywords": ["魔女裁判"]
     }
   ],
   "xAccounts": [
