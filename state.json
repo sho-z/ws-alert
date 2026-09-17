@@ -33,5 +33,7 @@
       "lastTweetId": "2099813651234631919"
     }
   },
-  "errors": {}
+  "errors": {
+    "pages:witch-trial-trialdeck-hbst": true
+  }
 }
