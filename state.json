@@ -20,7 +20,7 @@
     },
     "witch-trial-trialdeck-hbst": {
       "status": "closed",
-      "checkedAt": "2026-09-17T07:11:15.767Z"
+      "checkedAt": "2026-09-17T07:43:45.375Z"
     }
   },
   "x": {
@@ -33,7 +33,5 @@
       "lastTweetId": "2099813651234631919"
     }
   },
-  "errors": {
-    "pages:witch-trial-trialdeck-hbst": true
-  }
+  "errors": {}
 }
