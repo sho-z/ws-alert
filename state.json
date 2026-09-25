@@ -20,7 +20,7 @@
     },
     "witch-trial-trialdeck-hbst": {
       "status": "closed",
-      "checkedAt": "2026-09-24T23:57:49.822Z"
+      "checkedAt": "2026-09-25T00:42:45.208Z"
     }
   },
   "x": {
@@ -33,5 +33,7 @@
       "lastTweetId": "2103111675520188696"
     }
   },
-  "errors": {}
+  "errors": {
+    "news:hbst-store-ws-category": true
+  }
 }
