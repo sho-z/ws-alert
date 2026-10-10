@@ -34,7 +34,6 @@
     }
   },
   "errors": {
-    "pages:witch-trial-trialdeck-hbst": true,
-    "news:amiami-yahoo-tcg": true
+    "pages:witch-trial-trialdeck-hbst": true
   }
 }
