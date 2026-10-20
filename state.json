@@ -34,6 +34,8 @@
     }
   },
   "errors": {
-    "pages:witch-trial-trialdeck-hbst": true
+    "pages:witch-trial-trialdeck-hbst": true,
+    "x:wstcg": true,
+    "x:13witch_trials": true
   }
 }
