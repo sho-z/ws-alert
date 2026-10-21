@@ -36,6 +36,8 @@
   "errors": {
     "pages:witch-trial-trialdeck-hbst": true,
     "x:wstcg": true,
-    "x:13witch_trials": true
+    "x:13witch_trials": true,
+    "news:wstcg-information": true,
+    "news:wstcg-products": true
   }
 }
