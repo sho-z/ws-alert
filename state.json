@@ -1,7 +1,13 @@
 {
   "news": {
-    "wstcg-information": [],
-    "wstcg-products": [],
+    "wstcg-information": [
+      "https://ws-tcg.com/products/mjs_bp_ws/",
+      "https://ws-tcg.com/products/mjs_td_ws/"
+    ],
+    "wstcg-products": [
+      "https://ws-tcg.com/products/mjs_bp_ws/",
+      "https://ws-tcg.com/products/mjs_td_ws/"
+    ],
     "yellowsubmarine-ws-category": [],
     "hbst-store-ws-category": [
       "https://store.shopping.yahoo.co.jp/hbst-store/4573616016506.html"
